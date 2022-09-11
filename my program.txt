@@ -1,0 +1,21 @@
+package com.javarush.task.pro.task04.task0418;
+
+import java.util.Scanner;
+
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        boolean person = scan.nextBoolean();
+        double glass = 0.5;
+        int pissimist = (int)Math.floor(glass);
+        int optimist = (int)Math.ceil(glass);
+        if(person == true){
+            System.out.println(optimist);
+        }
+        else
+        System.out.println(pissimist);
+        
+
+    }
+}
